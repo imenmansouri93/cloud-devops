@@ -13,10 +13,10 @@ local_backup_path="\Users\USER1\Desktop\backup-data"
 remote_repository_url="https://github.com/imenmansouri93/cloud-devops.git"
 
 # Step 1: Backup files from the container to the local machine.
-docker cp $magical_chandrasekhar:$/srv/jupyterhub $\Users\USER1\Desktop\backup-data
+docker cp $magical_chandrasekhar:$/srv/jupyterhub USER1\Desktop\backup-data
 
 # Step 2: Change directory to the backup path on your local machine.
-cd Users\USER1\Desktop\backup-data
+cd USER1\Desktop\backup-data
 
 # Step 3: Initialize a new Git repository if not already done.
 if [ ! -d ".git" ]; then
