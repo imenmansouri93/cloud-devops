@@ -7,16 +7,16 @@ container_name="multi-container-app"
 container_backup_path="/srv/jupyterhub"
 
 # Replace 'local_backup_path' with the path on your local machine where you want to save the backup files.
-local_backup_path="C:\Users\USER1\Desktop\Holbertonschool"
+local_backup_path="C:\Users\USER1\Desktop\backup-data"
 
 # Replace 'remote_repository_url' with the URL of your remote repository where you want to push the backup files.
 remote_repository_url="https://github.com/imenmansouri93/cloud-devops.git"
 
 # Step 1: Backup files from the container to the local machine.
-docker cp multi-container-app:$/srv/jupyterhub C:\Users\USER1\Desktop\Holbertonschool
+docker cp multi-container-app:$/srv/jupyterhub C:\Users\USER1\Desktop\backup-data
 
 # Step 2: Change directory to the backup path on your local machine.
-cd $C:\Users\USER1\Desktop\Holbertonschool
+cd $C:\Users\USER1\Desktop\backup-data
 
 # Step 3: Initialize a new Git repository if not already done.
 if [ ! -d ".git" ]; then
