@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Replace 'container_name' with the name of your running container.
-container_name="multi-container-app"
+container_name="magical_chandrasekhar"
 
 # Replace '/path/to/backup' with the path in the container from where you want to back up files.
 container_backup_path="/srv/jupyterhub"
@@ -13,7 +13,7 @@ local_backup_path="C:\Users\USER1\Desktop\backup-data"
 remote_repository_url="https://github.com/imenmansouri93/cloud-devops.git"
 
 # Step 1: Backup files from the container to the local machine.
-docker cp multi-container-app:$/srv/jupyterhub C:\Users\USER1\Desktop\backup-data
+docker cp $magical_chandrasekhar:$/srv/jupyterhub $C:\Users\USER1\Desktop\backup-data
 
 # Step 2: Change directory to the backup path on your local machine.
 cd $C:\Users\USER1\Desktop\backup-data
