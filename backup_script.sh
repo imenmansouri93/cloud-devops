@@ -12,9 +12,7 @@ docker cp $relaxed_pare:$/home/jovyan /c/Users/USER1/Desktop/backup-data
 
 cd /c/Users/USER1/Desktop/backup-data
 
-if [ ! -d ".git" ]; then
-  git init
-fi
+
 
 git add .
 .
