@@ -8,9 +8,9 @@ local_backup_path="C:\Users\USER1\Desktop\backup-data"
 
 remote_repository_url="https://github.com/imenmansouri93/mern_Application.git"
 
-docker cp $relaxed_pare:$/home/jovyan C:\Users\USER1\Desktop\backup-data
+docker cp $relaxed_pare:$/home/jovyan /c/Users/USER1/Desktop/backup-data
 
-cd C:\Users\USER1\Desktop\backup-data
+cd /c/Users/USER1/Desktop/backup-data
 
 if [ ! -d ".git" ]; then
   git init
